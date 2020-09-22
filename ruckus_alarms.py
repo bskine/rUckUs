@@ -2,6 +2,9 @@ import requests
 from pprint import *
 import datetime
 
+### disables InsecureRequestWarning 
+requests.packages.urllib3.disable_warnings()
+
 url_init = "https://136.226.130.97:8443/wsg/api/public/v8_2/serviceTicket"
 
 payload = "{\r\n  \"username\": \"pboynto\",\r\n  \"password\": \"Alpine4911!\"\r\n}"
